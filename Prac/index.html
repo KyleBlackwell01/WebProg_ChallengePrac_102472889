@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <style>
         body {
             background-color: rgb(241, 241, 241);
@@ -30,6 +28,7 @@
 
         .formW .workExp div h3 {
             color: purple;
+            font-weight: 100;
 
         }
 
@@ -42,16 +41,72 @@
             font-size: 15px;
         }
 
-        hr 
-        {
+        hr {
             margin: 30px -20px 20px;
             border: 0;
-            border-top: 1px solid rgb(238,238,238);
+            border-top: 1px solid rgb(238, 238, 238);
+        }
+
+        .heads img {
+            float: left;
+            width: 10%;
+        }
+
+        .ainsley img {
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            width: 40%;
+            padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
 
 <body>
+    <form class="formW">
+        <div class="heads">
+            <img src="ainsley.jpg">
+            <h1>Kyle</h1>
+        </div><br>
+    </form><br>
+    <form class="formW">
+        <div class="ainsley">
+            <h1>Interests</h1>
+            <div class="row">
+                <div class="column">
+                    <p>Oilin' up.</p>
+                    <img src="Ainsley1.jpg">
+                </div>
+                <div class="column">
+                    <p>Shakin' pepper.</p>
+                    <img src="Ainsley2.png">
+                </div>
+                <div class="column">
+                    <p>Eatin'</p>
+                    <img src="Ainsley3.jpg">
+                </div>
+                <div class="column">
+                    <p>Presentin'</p>
+                    <img src="Ainsley4.jpg">
+                </div>
+            </div>
+            <table>
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </form><br>
     <form class="formW">
         <div class="workExp">
             <h1>Work Experience</h1>
