@@ -70,6 +70,43 @@
             clear: both;
             display: table;
         }
+
+        .myform
+        {
+            margin: 0 auto;
+            display: inline-block;
+            background-color: white;
+            position: absolute;
+        }
+        .myform input
+        {
+            border: none;
+            padding: 25px 25px;
+            background-color: wheat;
+            width: 100%;
+            height: 50%;
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        .myform button
+        {
+            text-transform: uppercase;
+            border-radius: 25px;
+            color: white;
+            padding: 20px 100px;
+            min-width: 80%;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .myform .text
+        {
+            font-family: Arial;
+            font-size: 16px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -161,6 +198,20 @@
                         <p>
                             Did basic english.
                         </p>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form><br>
+    <form class="formW">
+        <div class="workExp">
+            <h1>Contact Me</h1>
+            <div>
+                <table>
+                    <tr>
+                        <input type="text" name="name" placeholder="John Smith" /><br>
+                        <input type="text" name="email" placeholder="jsmith@example.com" /><br>
+                        <button>Submit</button>
                     </tr>
                 </table>
             </div>
